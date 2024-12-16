@@ -1,0 +1,33 @@
+@import url(fonts.css);
+
+.footer {
+    background: linear-gradient(180.00deg, rgb(0, 0, 0), rgba(105, 207, 23, 0.5) 100%);
+    height: 325px;
+}
+
+.footer-content__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.footer-top__contact {
+    color: rgb(255, 255, 255);
+    font-family: 'RBB';
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.footer-content__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 81px;
+    gap: 20px;
+}
+
+.footer-list__link {
+    color: rgb(255, 255, 255);
+    font-family: 'RR';
+    font-size: 20px;
+    line-height: 23px;
+}

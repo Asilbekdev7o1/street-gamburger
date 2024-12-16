@@ -1,0 +1,17 @@
+@import url(../fonts.css);
+
+
+.map-title {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(105, 207, 23);
+    font-family: 'RB';
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.map-info iframe {
+    width: 100%;
+    height: 450px;
+}

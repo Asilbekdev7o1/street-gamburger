@@ -1,0 +1,245 @@
+@import url(fonts.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.prenav {
+    background: black;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.prenav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prenav-box__left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.prenav-left__icon {
+    color: rgb(255, 255, 255);
+}
+
+.prenav-left__link {
+    color: rgb(255, 255, 255);
+    font-family: 'RBR';
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.prenav-right__list {
+    display: flex;
+    gap: 20px;
+}
+
+.prenav-list__link {
+    color: rgb(255, 255, 255);
+    font-family: 'RBR';
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.nav {
+    border: 1px solid rgba(125, 115, 115, 0.5);
+    backdrop-filter: blur(15px);
+    background: rgba(0, 0, 0, 0.5);
+    height: 65px;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-group__logo {
+    color: rgb(255, 255, 255);
+    font-family: 'RBB';
+    font-size: 36px;
+    line-height: 30px;
+    border: 4px solid rgb(6, 96, 15);
+    border-radius: 4px;
+    background: rgba(10, 148, 24, 0.75);
+    padding: 8px 14px;
+}
+
+.nav-group__list {
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+
+.nav-group li {
+    height: 100%;
+}
+
+.nav-group__link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: 'RR';
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 14px;
+    padding-right: 14px;
+    transition: all 500ms;
+}
+
+.nav-group__link:hover {
+    background: rgba(105, 207, 23, 0.75);
+}
+
+/* **** header content *** */
+
+.header-content {
+    background: url(../img/food-burger-wallpaper-preview\ 1.jpeg) no-repeat center /cover;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-content__title {
+    color: rgb(105, 207, 23);
+    font-family: 'RBlack';
+    font-size: 72px;
+    line-height: 85px;
+    margin-bottom: 5px;
+}
+
+.header-content__minititle {
+    color: rgb(105, 207, 23);
+    font-family: 'RR';
+    font-size: 36px;
+    line-height: 17px;
+    margin-bottom: 18px;
+}
+
+.header-content__text {
+    color: rgb(255, 255, 255);
+    font-family: 'RR';
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.header-content__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-box__left-link {
+    color: rgb(255, 255, 255);
+    font-family: 'RT';
+    font-size: 50px;
+    line-height: 25px;
+    backdrop-filter: blur(18px);
+    background: rgba(105, 207, 23, 0.5);
+    padding: 33px 76px;
+}
+
+.header-box__right-link {
+    color: rgb(255, 255, 255);
+    font-family: 'RR';
+    font-size: 18px;
+    line-height: 21px;
+    border-radius: 6px;
+    padding: 15px 71px;
+    background: linear-gradient(90.00deg, rgb(105, 207, 23), rgb(65, 125, 17) 100%);
+}
+
+.header-bottom {
+    height: 48px;
+    background: black;
+}
+
+/* **** media start  **** */
+
+@media (max-width:450px) {
+  
+
+    .prenav-box {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .prenav-right__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+        display: flex;
+    }
+}
+
+@media (max-width:700px) {
+
+    .nav {
+        height: 218px;
+        align-items: flex-start;
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+
+    .nav-group {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .nav-group__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width:600px) {
+    .header-content__box{
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width:400px) {
+    .header-content__title{
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+
+
+/* **** media end  **** */
